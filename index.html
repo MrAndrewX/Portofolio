@@ -27,6 +27,7 @@
 
 .cmd {
     --color: white;
+    text-shadow: 0 0 5px #09ff00;
 }
 
   
@@ -45,11 +46,13 @@
 .barcode{
     width: 10px;
 }
+
     </style>
 </head>
   
 <body>
-    <template id="welcome">
+    <template id="welcome" class="welcome">
+        
         [[;green;]
         ________________    ____    __| _/______   ______  _  __  ___  ______.__.________
         /     \_  __ \__  \  /    \  / __ |\_  __ \_/ __ \ \/ \/ /  \  \/  <   |  |\___   /
@@ -95,10 +98,74 @@
             },
             contact: function () {
                 this.echo('[[;white;]Veo que quieres ponerte en contacto conmigo,\naqui tienes mi correo electronico! [[;grey;]\n'
-                + '[[;red;]apantojaa2002@gmail.com[[;grey;]\n'
+                + '[[;lightblue;]apantojaa2002@gmail.com[[;grey;]\n'
                 
                 );         
             },
+            cv: function () {
+                this.echo('[[;white;]Técnico Superior en desarrollo de aplicaciones web\n'
+                + 'Actualmente estudiante de segundo año en desarrollo de aplicaciones web en Es Liceu[[;grey;]\n'
+                + '[[;lightblue;]Mis especialidades[[;grey;]\n'
+                + '[[;white;]   # Ciberseguridad[[;grey;]\n'
+                + '[[;white;]   # Bases de datos MySQL[[;grey;]\n'
+                + '[[;white;]   # Diseño Web[[;grey;]\n'
+                + '[[;white;]   # Java / JavaScript[[;grey;]\n'
+                + '[[;lightblue;]Estudios[[;grey;]\n'
+                + '[[;pink;] Técnico Superior en Desarrollo de aplicaciones Web[[;grey;]\n'
+                + '[[;lightgreen;]   (Septiembre 2021 - Presente | CC Es Liceu)[[;grey;]\n'
+                + '[[;pink;] Técnico en sistemas Microinformáticos y Redes[[;grey;]\n'
+                + '[[;lightgreen;]   (Septiembre 2019 - Junio 2021  | CC Es Liceu)[[;grey;]\n'
+                + '[[;pink;] Titulo profesional Básico en informática y Comunicaciones[[;grey;]\n'
+                + '[[;lightgreen;]   (Septiembre 2017 - Junio 2019  | CC Es Liceu)[[;grey;]\n'
+                + '[[;pink;] Educación Secundaria Obligatoria[[;grey;]\n'
+                + '[[;lightgreen;]   (Septiembre 2017 - Junio 2019  | CC Es Liceu)[[;grey;]\n'
+
+
+                + '[[;lightblue;]Experiencia Laboral[[;grey;]\n'
+                + '[[;pink;]   Tecnico IT - (Erasmus+)[[;grey;]\n'
+                + '[[;lightgreen;]   (Abril 2021 - Julio 2021)[[;grey;]\n'
+                + '[[;white;]       Ogrody Edukacyjne, Wroclaw, Polonia[[;grey;]\n'
+                + '[[;white;]           # Administrador de sistemas informaticos en red[[;grey;]\n'
+                + '[[;white;]           # Administracion de servidores Unix/Windows[[;grey;]\n'
+                + '[[;white;]           # Tecnico de taller[[;grey;]\n'
+                + '[[;white;]           # Reparación Hardware informatico[[;grey;]\n'
+                + '[[;pink;]   Tecnico IT - (Erasmus)[[;grey;]\n'
+                + '[[;lightgreen;]   (Mayo 2019 - Mayo 2019)[[;grey;]\n'
+                + '[[;white;]      Commune di Lucca, Lucca, Italia[[;grey;]\n'
+                + '[[;white;]           # Analista de actualizaciones para los equipos informaticos[[;grey;]\n'
+                + '[[;white;]           # Mantenimiento de infraestructuras de red[[;grey;]\n'
+                + '[[;white;]           # Tecnico de taller[[;grey;]\n'
+                + '[[;white;]           # Instalacion de equipos y reinstalacion de sistemas operativos propietarios y libres[[;grey;]\n'
+                + '[[;pink;]   Tecnico IT - (Practicas)[[;grey;]\n'
+                + '[[;lightgreen;]   (Mayo 2019 - Mayo 2019)[[;grey;]\n'
+                + '[[;white;]     Palma de Mallorca, Islas Baleares, España[[;grey;]\n'
+                + '[[;white;]           # Mantenimiento de equipos informaticos [[;grey;]\n'
+                + '[[;white;]           # Intalación y configuración de redes[[;grey;]\n'
+                + '[[;white;]           # Responsable de las copias de seguridad de la empresa[[;grey;]\n'
+                + '[[;white;]           # Instalacion y mantenimiento de servidores[[;grey;]\n'
+                + '[[;lightblue;]Permisos y carné[[;grey;]\n'
+                + '[[;white;]   # Permiso de conducir B[[;grey;]\n'
+                + '[[;white;]   # Vehiculo propio[[;grey;]\n'
+                
+                );
+                         
+            },
+            github: function () {
+                this.echo('[[;white;]Hecha un vistazo a mi codigo!\n'+
+                '[[;blue;]https://github.com/mrandrewx[[;grey;]\n'
+                
+                ); 
+        },
+        rrss: function () {
+                this.echo('[[;white;]Hecha un vistazo a mis redes sociales!!\n'+
+                '[[;red;]Instagram: [[;blue;]https://instagram.com/mrandrew.xyz[[;grey;]\n'
+                +'[[;red;]Linkedin: [[;blue;]https://www.linkedin.com/in/andrés-p-b3b9441a2/[[;grey;]\n'
+                +'[[;red;]Twitter: [[;blue;]https://twitter.com/MrAndrew_X[[;grey;]\n'
+                
+                
+                ); 
+        }
+            
         }, {
             greetings: welcome.innerHTML,
             prompt: '[[;lightgreen;]root@mrandrew.xyz[[;white;]:[[;blue;]~[[;white;]$[[;white;] '
