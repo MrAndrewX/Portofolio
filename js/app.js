@@ -1,8 +1,5 @@
 $('body').terminal({
-    iam: function (name) {
-        this.echo('Hello, ' + name +
-            '. Welcome to GeeksForGeeks');
-    },
+   
     help: function () {
         this.echo('[[;red;]"help" [[;grey;] - [[;yellow;]Muestra este Menu[[;grey;]\n'
         + '[[;red;]"whoami" [[;grey;] - [[;yellow;]¿Quien soy? Aqui te explico un poco de mi vida[[;grey;]\n'
