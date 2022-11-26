@@ -18,7 +18,7 @@ $('body').terminal({
     whoami: function () {
         this.echo('¡Hola! Yo soy Andres Pantoja, encantado de conocerte.\n'+
         ' Nací en 2002 en Palma de Mallorca, desde bastante pequeño me ha apasionado el mundo de la informatica, sobre todo la parte de sistemas y ciberseguridad. Mis hobbies son la practica del Airsoft, la mécanica y viajar.\n'+
-        '<img src="https://pps.whatsapp.net/v/t61.24694-24/263628663_420899643171760_5439518274996063788_n.jpg?ccb=11-4&oh=01_AdTSsGD6xzaE58MgUUWOJp343wFx8eXpSmu5XR_fK-hCxQ&oe=638E8853"/>^------- Este soy yo por si no te habias dado cuenta -_-',{raw: true}
+        '<img src="./img/yo.png"/>^------- Este soy yo por si no te habias dado cuenta -_-',{raw: true}
         );
     },
     projects: function () {
@@ -39,10 +39,24 @@ $('body').terminal({
         this.echo('[[;white;]Técnico Superior en desarrollo de aplicaciones web\n'
         + 'Actualmente estudiante de segundo año en desarrollo de aplicaciones web en Es Liceu[[;grey;]\n'
         + '[[;lightblue;]Mis especialidades[[;grey;]\n'
-        + '[[;white;]   # Ciberseguridad[[;grey;]\n'
+        + '[[;white;]   # Sistemas[[;grey;]\n'
+        + '[[;white;]   # Telecomunicaciones[[;grey;]\n'
         + '[[;white;]   # Bases de datos MySQL[[;grey;]\n'
         + '[[;white;]   # Diseño Web[[;grey;]\n'
         + '[[;white;]   # Java / JavaScript[[;grey;]\n'
+        + '[[;white;]   # Despliegue de aplicaciones[[;grey;]\n'
+        + '[[;lightblue;]Intereses[[;grey;]\n'
+        + '[[;white;]   # Ciberseguridad[[;grey;]\n'
+        + '[[;white;]   # Docker[[;grey;]\n'
+        + '[[;white;]   # Nuevas tecnologias[[;grey;]\n'
+        
+        
+        + '[[;lightblue;]Aptitudes[[;grey;]\n'
+        + '[[;white;]   # Trabajo en equipo[[;grey;]\n'
+        + '[[;white;]   # Capacidad de liderazgo[[;grey;]\n'
+        + '[[;white;]   # Pensamiento crítico[[;grey;]\n'
+        + '[[;white;]   # Resolución de problemas[[;grey;]\n'
+        + '[[;white;]   # Aprendizaje continuo[[;grey;]\n'
         + '[[;lightblue;]Estudios[[;grey;]\n'
         + '[[;pink;] Técnico Superior en Desarrollo de aplicaciones Web[[;grey;]\n'
         + '[[;lightgreen;]   (Septiembre 2021 - Presente | CC Es Liceu)[[;grey;]\n'
