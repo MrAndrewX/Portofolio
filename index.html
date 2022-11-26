@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta http-equiv="content-type" 
+        content="text/html; charset=UTF-8">
+  
+    <meta name="viewport" content="width=device-width,
+        minimum-scale=1,initial-scale=1">
+  
+    <script src=
+        "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+  
+    <script src=
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+    </script>
+  
+    <link rel="stylesheet" href=
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+  
+    <style type="text/css">
+        .cmd-prompt {
+    --color: blue;
+}
+       
+
+.cmd {
+    --color: white;
+}
+
+  
+        .terminal,
+        span {
+            --size: 1.4;
+        }
+        .terminal img {
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+            max-width: 300px;
+            border-radius:15%;
+            
+}
+.barcode{
+    width: 10px;
+}
+    </style>
+</head>
+  
+<body>
+    <template id="welcome">
+        [[;green;]
+        ________________    ____    __| _/______   ______  _  __  ___  ______.__.________
+        /     \_  __ \__  \  /    \  / __ |\_  __ \_/ __ \ \/ \/ /  \  \/  <   |  |\___   /
+       |  Y Y  \  | \// __ \|   |  \/ /_/ | |  | \/\  ___/\     /    >    < \___  | /    / 
+       |__|_|  /__|  (____  /___|  /\____ | |__|    \___  >\/\_/ /\ /__/\_ \/ ____|/_____ \
+             \/           \/     \/      \/             \/       \/       \/\/           \/
+             [[;gray;]
+             [[;white;]¡Hola!, Soy Andres Pantoja, Desarrollador de softare. Bienvenido
+             a mi portofolio. Para saber mas sobre mi, puedes saberlo utilizando el comando:  [[;red;]"help" [[;grey;]
+             [[;white;]
+    </template>
+    <script>
+        $('body').terminal({
+            iam: function (name) {
+                this.echo('Hello, ' + name +
+                    '. Welcome to GeeksForGeeks');
+            },
+            help: function () {
+                this.echo('[[;red;]"help" [[;grey;] - [[;yellow;]Muestra este Menu[[;grey;]\n'
+                + '[[;red;]"whoami" [[;grey;] - [[;yellow;]¿Quien soy? Aqui te explico un poco de mi vida[[;grey;]\n'
+                + '[[;red;]"projects" [[;grey;] - [[;yellow;]Moestrar todos mis proyectos[[;grey;]\n'
+                + '[[;red;]"contact" [[;grey;] - [[;yellow;]Por si quieres charlar un rato[[;grey;]\n'
+                + '[[;red;]"cv" [[;grey;] - [[;yellow;]Mostrar mi curriculum, para que sepas en que estoy formado[[;grey;]\n'
+                + '[[;red;]"github" [[;grey;] - [[;yellow;]Por si quieres ver un poco de mi codigo 😉[[;grey;]\n'
+                + '[[;red;]"rrss" [[;grey;] - [[;yellow;]Mis redes sociales[[;grey;]\n'
+               
+                
+                );
+            },
+            whoami: function () {
+                this.echo('¡Hola! Yo soy Andres Pantoja, encantado de conocerte.\n'+
+                ' Nací en 2002 en Palma de Mallorca, desde bastante pequeño me ha apasionado el mundo de la informatica, sobre todo la parte de sistemas y ciberseguridad. Mis hobbies son la practica del Airsoft, la mécanica y viajar.\n'+
+                '<img src="https://pps.whatsapp.net/v/t61.24694-24/263628663_420899643171760_5439518274996063788_n.jpg?ccb=11-4&oh=01_AdTSsGD6xzaE58MgUUWOJp343wFx8eXpSmu5XR_fK-hCxQ&oe=638E8853"/>^------- Este soy yo por si no te habias dado cuenta -_-',{raw: true}
+                );
+            },
+            projects: function () {
+                this.echo('[[;white;]Mis Projectos [[;grey;]\n'
+                + '[[;red;]🧾 Barcodes [[;grey;] - [[;yellow;]Generador y lector de codigos de barras hecho en Java nativo[[;grey;]\n'
+                + '[[;red;]🔺 Figuras Geometricas [[;grey;] - [[;yellow;]Generador de figuras para guardar, mostrarlas utilizando API Servlets Java[[;grey;]\n'
+                + '[[;red;]🎯 Text Patterns [[;grey;] - [[;yellow;]Motor Regex hecho en java.[[;grey;]\n'
+                + '[[;red;]🎮 Maze Game [[;grey;] - [[;yellow;]Juego de completar laberintos utilizando Java API Servlets.[[;grey;]\n'
+                );         
+            },
+            contact: function () {
+                this.echo('[[;white;]Veo que quieres ponerte en contacto conmigo,\naqui tienes mi correo electronico! [[;grey;]\n'
+                + '[[;red;]apantojaa2002@gmail.com[[;grey;]\n'
+                
+                );         
+            },
+        }, {
+            greetings: welcome.innerHTML,
+            prompt: '[[;lightgreen;]root@mrandrew.xyz[[;white;]:[[;blue;]~[[;white;]$[[;white;] '
+        });
+        
+    </script>
+</body>
+  
+</html>
