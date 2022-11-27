@@ -53,8 +53,10 @@
 .barcode{
     width: 10px;
 }
-      .terminal .welcome{
-      
+      @media only screen and (max-width: 600px) {
+        .terminal .welcome{
+          display:none;
+        }
       }
     </style>
   <title></title>
@@ -72,9 +74,7 @@
              [[;gray;]
              [[;white;]
       ¡Hola!, Soy Andrés Pantoja, Desarrollador de software. Bienvenido
-a mi portofolio. Para saber mas sobre mi, puedes saberlo utilizando el comando:
-
-      [[;red;]"help" [[;grey;]
+a mi portofolio. Para saber mas sobre mi, puedes saberlo utilizando el comando:[[;red;]"help" [[;grey;]
              [[;white;]
     </template>
     <script src="./js/app.js">
