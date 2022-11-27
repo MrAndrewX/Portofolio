@@ -78,7 +78,19 @@ a mi portofolio. Para saber mas sobre mi, puedes saberlo utilizando el comando:
              [[;white;]
     </template>
     <script src="./js/app.js">
-        
+    </script>
+    <script>
+    <script type='text/javascript'> 
+      title = "Andrés Pantojo - Web Developer";
+      position = 0;
+        function scrolltitle() {
+      document.title = title.substring(position, title.length) + title.substring(0, position); 
+      position++;
+      if (position > title.length) position = 0;
+      titleScroll = window.setTimeout(scrolltitle,170);
+    }
+scrolltitle();
+</script>
     </script>
 </body>
   
