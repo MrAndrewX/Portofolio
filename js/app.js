@@ -1,8 +1,8 @@
 $('body').terminal({
    
     help: function () {
-        this.echo('[[;red;]"help" [[;grey;] - [[;yellow;]Muestra este Menu[[;grey;]\n'
-        + '[[;red;]"whoami" [[;grey;] - [[;yellow;]¿Quien soy? Aqui te explico un poco de mi vida[[;grey;]\n'
+        this.echo('[[;red;]"help" [[;grey;] - [[;yellow;]Muestra este Menú[[;grey;]\n'
+        + '[[;red;]"whoami" [[;grey;] - [[;yellow;]¿Quién soy? Aquí te explico un poco de mi vida[[;grey;]\n'
         + '[[;red;]"projects" [[;grey;] - [[;yellow;]Mostrar todos mis proyectos[[;grey;]\n'
         + '[[;red;]"contact" [[;grey;] - [[;yellow;]Por si quieres charlar un rato[[;grey;]\n'
         + '[[;red;]"cv" [[;grey;] - [[;yellow;]Mostrar mi curriculum, para que sepas en que estoy formado[[;grey;]\n'
@@ -13,8 +13,8 @@ $('body').terminal({
         );
     },
     whoami: function () {
-        this.echo('¡Hola! Yo soy Andres Pantoja, encantado de conocerte.\n'+
-        ' Nací en 2002 en Palma de Mallorca, desde bastante pequeño me ha apasionado el mundo de la informatica, sobre todo la parte de sistemas y ciberseguridad. Mis hobbies son la practica del Airsoft, la mécanica y viajar.\n'+
+        this.echo('¡Hola! Yo soy Andrés Pantoja, encantado de conocerte.\n'+
+        ' Nací en 2002 en Palma de Mallorca, desde bastante pequeño me ha apasionado el mundo de la informática, sobre todo la parte de sistemas y ciberseguridad. Mis hobbies son la practica del Airsoft, la mécanica y viajar.\n'+
         '<img src="./img/yo.png"/>^------- Este soy yo por si no te habias dado cuenta -_-',{raw: true}
         );
     },
